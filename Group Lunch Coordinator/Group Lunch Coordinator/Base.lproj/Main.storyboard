@@ -1,24 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2WX-hh-vYE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Group_Lunch_Coordinator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="M7a-wu-sDV">
+                                <rect key="frame" x="87" y="340" width="240" height="216"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="user name " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaY-5Z-w3l">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="33.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33.5" id="mJk-AG-9rl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1im-3U-LaZ">
+                                        <rect key="frame" x="0.0" y="76.5" width="240" height="66.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check late lunch or early lunch " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxx-eb-WEn">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb8-Or-VF1">
+                                                <rect key="frame" x="0.0" y="36.5" width="240" height="30"/>
+                                                <state key="normal" title="Early Lunch"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoL-3d-uYI">
+                                        <rect key="frame" x="0.0" y="186" width="240" height="30"/>
+                                        <state key="normal" title="Join!"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hungry Homies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-a6-as9">
+                                <rect key="frame" x="94" y="199" width="226" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="RVI-EQ-REv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZU7-a6-as9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="82I-EX-76m"/>
+                            <constraint firstItem="M7a-wu-sDV" firstAttribute="top" secondItem="ZU7-a6-as9" secondAttribute="bottom" constant="100" id="aPM-BO-SDA"/>
+                            <constraint firstItem="M7a-wu-sDV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="amo-AG-UHk"/>
+                            <constraint firstItem="ZU7-a6-as9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="ekV-Ua-fui"/>
+                            <constraint firstItem="M7a-wu-sDV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xfm-qe-gS7"/>
+                            <constraint firstItem="ZU7-a6-as9" firstAttribute="centerX" secondItem="M7a-wu-sDV" secondAttribute="centerX" id="yKr-wF-lFf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bl2-H9-fr8"/>
+                    <connections>
+                        <outlet property="checkLunchTime" destination="sb8-Or-VF1" id="DH9-ha-xx0"/>
+                        <outlet property="joinLunch" destination="JoL-3d-uYI" id="Azc-UX-BEf"/>
+                        <outlet property="userNameText" destination="RaY-5Z-w3l" id="Pni-1j-6c7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="92.410714285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pLf-R9-2em">
+            <objects>
+                <viewController id="bBM-0d-pqE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t7G-xS-EfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="Ktj-RS-bF7">
+                                <rect key="frame" x="87" y="162" width="240" height="572"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKm-Dq-uGI">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EBx-nh-vn7">
+                                        <rect key="frame" x="0.0" y="51.5" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="zaZ-Zi-mMR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="short description of restaurant " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Gu-VF-ZD0">
+                                        <rect key="frame" x="0.0" y="210.5" width="240" height="361.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ktj-RS-bF7" firstAttribute="centerX" secondItem="t7G-xS-EfQ" secondAttribute="centerX" id="CVN-9y-eDs"/>
+                            <constraint firstItem="Ktj-RS-bF7" firstAttribute="centerY" secondItem="t7G-xS-EfQ" secondAttribute="centerY" id="Tzb-Fj-MlZ"/>
+                            <constraint firstItem="Ktj-RS-bF7" firstAttribute="leading" secondItem="1QH-AA-NN1" secondAttribute="leading" constant="87" id="dwF-EJ-P6j"/>
+                            <constraint firstItem="Ktj-RS-bF7" firstAttribute="top" secondItem="1QH-AA-NN1" secondAttribute="top" constant="118" id="rH4-9g-UKF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1QH-AA-NN1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gmn-Pp-4pb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850.7246376811595" y="91.741071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ecG-Xe-30a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2WX-hh-vYE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pyq-4c-9o9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4Dc-nJ-aR4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1h-fY-r7r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
         </scene>
     </scenes>
 </document>
