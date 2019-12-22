@@ -13,6 +13,11 @@
 		023D54C723A9D1EE002FE37E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023D54C623A9D1EE002FE37E /* Assets.xcassets */; };
 		023D54CA23A9D1EE002FE37E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023D54C823A9D1EE002FE37E /* LaunchScreen.storyboard */; };
 		023D54D223AC580B002FE37E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54D123AC580B002FE37E /* LoginViewController.swift */; };
+		023D54D423AC6D9E002FE37E /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54D323AC6D9E002FE37E /* UserController.swift */; };
+		023D54D623AC6E4C002FE37E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54D523AC6E4C002FE37E /* User.swift */; };
+		023D54D823AFFB5C002FE37E /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54D723AFFB5C002FE37E /* UserTableViewController.swift */; };
+		023D54DA23AFFDBA002FE37E /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54D923AFFDBA002FE37E /* UserTableViewCell.swift */; };
+		023D54DC23B0011A002FE37E /* UserTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		023D54C923A9D1EE002FE37E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		023D54CB23A9D1EE002FE37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		023D54D123AC580B002FE37E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		023D54D323AC6D9E002FE37E /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		023D54D523AC6E4C002FE37E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		023D54D723AFFB5C002FE37E /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		023D54D923AFFDBA002FE37E /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +70,14 @@
 				023D54BF23A9D1EA002FE37E /* SceneDelegate.swift */,
 				023D54C323A9D1EA002FE37E /* Main.storyboard */,
 				023D54D123AC580B002FE37E /* LoginViewController.swift */,
+				023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */,
+				023D54D723AFFB5C002FE37E /* UserTableViewController.swift */,
+				023D54D323AC6D9E002FE37E /* UserController.swift */,
+				023D54D523AC6E4C002FE37E /* User.swift */,
 				023D54C623A9D1EE002FE37E /* Assets.xcassets */,
 				023D54C823A9D1EE002FE37E /* LaunchScreen.storyboard */,
 				023D54CB23A9D1EE002FE37E /* Info.plist */,
+				023D54D923AFFDBA002FE37E /* UserTableViewCell.swift */,
 			);
 			path = "Group Lunch Coordinator";
 			sourceTree = "<group>";
@@ -140,7 +155,12 @@
 			files = (
 				023D54D223AC580B002FE37E /* LoginViewController.swift in Sources */,
 				023D54BE23A9D1EA002FE37E /* AppDelegate.swift in Sources */,
+				023D54DA23AFFDBA002FE37E /* UserTableViewCell.swift in Sources */,
+				023D54D423AC6D9E002FE37E /* UserController.swift in Sources */,
+				023D54D623AC6E4C002FE37E /* User.swift in Sources */,
+				023D54D823AFFB5C002FE37E /* UserTableViewController.swift in Sources */,
 				023D54C023A9D1EA002FE37E /* SceneDelegate.swift in Sources */,
+				023D54DC23B0011A002FE37E /* UserTableViewCellDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
