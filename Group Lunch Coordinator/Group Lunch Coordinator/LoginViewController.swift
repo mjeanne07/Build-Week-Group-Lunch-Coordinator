@@ -11,11 +11,15 @@ import UIKit
 class LoginViewController: UIViewController {
     
     
-    @IBOutlet weak var userNameText: UITextField!
+    @IBOutlet weak var userName: UITextField!
     
-    @IBOutlet weak var checkLunchTime: UIButton!
+    @IBAction func joinButton(_ sender: Any) {
+        guard let userName = userName.text, userName != "" else {return}
+        userController.createUser(withUserName: userName)
+    }
+ 
     
-    @IBOutlet weak var joinLunch: UIButton!
+    var userController = UserController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +28,17 @@ class LoginViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "Join" {
+        
+        guard let destinationVC = segue.destination as? UserTableViewController else { return }
+        
+        destinationVC.userController = userController
     }
-    */
-
+}
+    
 }
