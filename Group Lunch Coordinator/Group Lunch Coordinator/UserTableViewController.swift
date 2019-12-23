@@ -15,6 +15,20 @@ class UserTableViewController: UITableViewController, UserTableViewCellDelegate 
         tableView.reloadData()
     }
     
+    @IBAction func doneTapped(_ sender: UIBarButtonItem) {
+        showAlert()
+        
+    }
+    private func showAlert() {
+        
+        let alert = UIAlertController(title: "Time For Lunch", message: "Get ready for lunch at x location, leaving in 15 min.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
     func userFor(indexPath: IndexPath) -> User {
           if indexPath.section == 0 {
               return userController.earlyUsers[indexPath.row]

@@ -139,12 +139,14 @@
                             <outlet property="delegate" destination="YzY-AD-dqE" id="rCR-30-8Yz"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Cancel" id="yhH-j3-amm"/>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9NO-NR-TLl"/>
-                        <barButtonItem title="Save" id="tq3-Q4-3aC"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="wOc-Hm-xM8"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wOc-Hm-xM8">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="ywZ-1E-dwV">
+                            <connections>
+                                <action selector="doneTapped:" destination="YzY-AD-dqE" id="gZ6-Dd-YxV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHZ-r5-zeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
