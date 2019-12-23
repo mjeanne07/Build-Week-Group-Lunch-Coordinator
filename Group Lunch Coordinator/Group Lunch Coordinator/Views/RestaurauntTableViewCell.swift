@@ -9,6 +9,15 @@
 import UIKit
 
 class RestaurauntTableViewCell: UITableViewCell {
+    
+    var delegate: RestaurantTableViewCellDelegate?
+    
+    //IB Outlets
+    
+    @IBOutlet weak var restaurantNameLbl: UILabel!
+    @IBOutlet weak var restaurantDetailsLbl: UIButton!
+    @IBOutlet weak var selectUnselectBtn: UIButton!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

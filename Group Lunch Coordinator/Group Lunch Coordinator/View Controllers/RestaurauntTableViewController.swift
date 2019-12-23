@@ -9,18 +9,18 @@
 import UIKit
 
 class RestaurauntTableViewController: UITableViewController {
+    
+    //outlet tableView
 
+    @IBOutlet var restTableView: UITableView!
+    
     var restaurants: [Restaurant] = [Restaurant(name: "PF Changs", details: "P.F. Chang's offers authentic Chinese food & Asian cuisine in a casual dining atmosphere")]
        
-    
     override func viewDidLoad() {
+//        self.restTableView.delegate = self
+//        self.restTableView.dataSource = self
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -31,19 +31,16 @@ class RestaurauntTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return restaurants.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+    override func tableView(_ restTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurauntCell", for: indexPath) as? RestaurauntTableViewCell else { return UITableViewCell() }
+        let restaurant = restaurants
         return cell
     }
-    */
+   
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,3 +88,15 @@ class RestaurauntTableViewController: UITableViewController {
     */
 
 }
+
+//extension RestaurauntTableViewController: RestaurantTableViewCellDelegate {
+//    func toggleHasBeenSelected(for cell: RestaurauntTableViewCell) {
+//        guard let indexPath = tableView.indexPath(for: cell) else { return }
+//        cell.delegate = self
+//        tableView.reloadData()
+//    }
+//
+//}
+
+
+ 

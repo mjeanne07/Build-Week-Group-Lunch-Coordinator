@@ -21,6 +21,7 @@
 		A645BB8423B1559A00F6C350 /* RestaurauntTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8323B1559A00F6C350 /* RestaurauntTableViewCell.swift */; };
 		A645BB8923B157F300F6C350 /* RestaurauntTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8823B157F300F6C350 /* RestaurauntTableViewController.swift */; };
 		A645BB8D23B1588600F6C350 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8C23B1588600F6C350 /* Restaurants.swift */; };
+		A645BB8F23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8E23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A645BB8323B1559A00F6C350 /* RestaurauntTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurauntTableViewCell.swift; sourceTree = "<group>"; };
 		A645BB8823B157F300F6C350 /* RestaurauntTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurauntTableViewController.swift; sourceTree = "<group>"; };
 		A645BB8C23B1588600F6C350 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
+		A645BB8E23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +74,13 @@
 		023D54BC23A9D1EA002FE37E /* Group Lunch Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				A645BB9023B16C0E00F6C350 /* Model Controller */,
 				A645BB8723B1576300F6C350 /* Model */,
 				A645BB8623B1575200F6C350 /* View Controllers */,
 				A645BB8523B155A000F6C350 /* Views */,
 				023D54BD23A9D1EA002FE37E /* AppDelegate.swift */,
 				023D54BF23A9D1EA002FE37E /* SceneDelegate.swift */,
 				023D54C323A9D1EA002FE37E /* Main.storyboard */,
-				023D54D123AC580B002FE37E /* LoginViewController.swift */,
-				023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */,
-				023D54D323AC6D9E002FE37E /* UserController.swift */,
 				023D54C623A9D1EE002FE37E /* Assets.xcassets */,
 				023D54C823A9D1EE002FE37E /* LaunchScreen.storyboard */,
 				023D54CB23A9D1EE002FE37E /* Info.plist */,
@@ -100,6 +100,7 @@
 		A645BB8623B1575200F6C350 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				023D54D123AC580B002FE37E /* LoginViewController.swift */,
 				023D54D723AFFB5C002FE37E /* UserTableViewController.swift */,
 				A645BB8823B157F300F6C350 /* RestaurauntTableViewController.swift */,
 			);
@@ -111,8 +112,18 @@
 			children = (
 				023D54D523AC6E4C002FE37E /* User.swift */,
 				A645BB8C23B1588600F6C350 /* Restaurants.swift */,
+				A645BB8E23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift */,
+				023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A645BB9023B16C0E00F6C350 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				023D54D323AC6D9E002FE37E /* UserController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				A645BB8923B157F300F6C350 /* RestaurauntTableViewController.swift in Sources */,
 				023D54D223AC580B002FE37E /* LoginViewController.swift in Sources */,
 				023D54BE23A9D1EA002FE37E /* AppDelegate.swift in Sources */,
+				A645BB8F23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift in Sources */,
 				A645BB8D23B1588600F6C350 /* Restaurants.swift in Sources */,
 				023D54DA23AFFDBA002FE37E /* UserTableViewCell.swift in Sources */,
 				023D54D423AC6D9E002FE37E /* UserController.swift in Sources */,

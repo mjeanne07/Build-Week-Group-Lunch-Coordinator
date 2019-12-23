@@ -151,16 +151,16 @@
             </objects>
             <point key="canvasLocation" x="1813.0434782608697" y="92.410714285714278"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Restauraunt Table View Controller-->
         <scene sceneID="WVg-OY-RVE">
             <objects>
-                <tableViewController id="UAK-LR-wyh" sceneMemberID="viewController">
+                <tableViewController id="UAK-LR-wyh" customClass="RestaurauntTableViewController" customModule="Group_Lunch_Coordinator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="S6W-Rn-kHf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="Kqh-Xr-skV" customClass="RestaurauntTableViewCell" customModule="Group_Lunch_Coordinator" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurauntCell" rowHeight="80" id="Kqh-Xr-skV" customClass="RestaurauntTableViewCell" customModule="Group_Lunch_Coordinator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kqh-Xr-skV" id="GXp-Hb-8dY">
@@ -183,14 +183,19 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81F-gh-WXN">
-                                            <rect key="frame" x="356" y="29" width="30" height="22"/>
+                                            <rect key="frame" x="346" y="15" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" image="checkmark.rectangle" catalog="system">
+                                            <state key="normal" image="unchecked">
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                             </state>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="restaurantDetailsLbl" destination="umc-9X-hXC" id="cka-le-fAV"/>
+                                    <outlet property="restaurantNameLbl" destination="5Y4-JW-njZ" id="h9i-RD-eI5"/>
+                                    <outlet property="selectUnselectBtn" destination="81F-gh-WXN" id="KNb-Np-Lew"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -199,6 +204,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="u4Z-LZ-yPX"/>
+                    <connections>
+                        <outlet property="tableView" destination="S6W-Rn-kHf" id="s1g-Zb-c6P"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="len-Zr-BBm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,6 +256,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark.rectangle" catalog="system" width="64" height="46"/>
+        <image name="unchecked" width="50" height="50"/>
     </resources>
 </document>

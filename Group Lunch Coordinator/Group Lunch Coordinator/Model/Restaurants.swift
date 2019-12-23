@@ -12,5 +12,12 @@ import Foundation
 struct Restaurant: Codable {
     var name: String
     var details: String
+    var selected: Bool
+    
+    init(name: String, details: String, selected: Bool = false) {
+        self.name = name
+        self.details = details
+        self.selected = selected
+    }
 }
 
