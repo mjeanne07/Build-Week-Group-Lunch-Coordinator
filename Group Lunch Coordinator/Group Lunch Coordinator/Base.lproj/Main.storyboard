@@ -16,21 +16,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="IQg-UT-yqI">
-                                <rect key="frame" x="93.5" y="327.5" width="227" height="241"/>
+                                <rect key="frame" x="40.5" y="307.5" width="333.5" height="281"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hungry Homies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-a6-as9">
-                                        <rect key="frame" x="0.0" y="0.0" width="227" height="41"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="51"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hK6-Wc-Pbk">
-                                        <rect key="frame" x="0.0" y="109" width="227" height="34"/>
+                                        <rect key="frame" x="0.0" y="119" width="333.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkJ-hc-22P">
-                                        <rect key="frame" x="0.0" y="211" width="227" height="30"/>
+                                        <rect key="frame" x="0.0" y="221" width="333.5" height="60"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
                                         <state key="normal" title="Join!"/>
                                         <connections>
                                             <action selector="joinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clH-AW-C6J"/>
@@ -39,10 +40,22 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlL-9Y-FSp">
+                                <rect key="frame" x="300" y="118" width="77" height="44"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="See Users"/>
+                                <connections>
+                                    <action selector="seeUsers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iis-YY-Wr9"/>
+                                    <segue destination="YzY-AD-dqE" kind="show" identifier="seeUsers" id="Hsh-2O-wd2"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GlL-9Y-FSp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="300" id="2e2-8Y-hJv"/>
+                            <constraint firstItem="GlL-9Y-FSp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="AXc-PA-GZb"/>
                             <constraint firstItem="IQg-UT-yqI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZCx-O4-YGy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GlL-9Y-FSp" secondAttribute="trailing" id="ei1-Pz-weO"/>
                             <constraint firstItem="IQg-UT-yqI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gxT-vQ-pXv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -143,7 +156,7 @@
                     <navigationItem key="navigationItem" id="wOc-Hm-xM8">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="ywZ-1E-dwV">
                             <connections>
-                                <action selector="doneTapped:" destination="YzY-AD-dqE" id="gZ6-Dd-YxV"/>
+                                <action selector="doneTapped:" destination="YzY-AD-dqE" id="gYE-3a-9TV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -247,4 +260,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hsh-2O-wd2"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -10,6 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    @IBAction func seeUsers(_ sender: UIButton) {
+    }
     
     @IBOutlet weak var userName: UITextField!
     
@@ -38,7 +40,9 @@ class LoginViewController: UIViewController {
         guard let destinationVC = segue.destination as? UserTableViewController else { return }
         
         destinationVC.userController = userController
-    }
+        } else if segue.identifier == "seeUsers" {
+            guard let destinationVC = segue.destination as? UserTableViewController else { return }
+        }
 }
     
 }
