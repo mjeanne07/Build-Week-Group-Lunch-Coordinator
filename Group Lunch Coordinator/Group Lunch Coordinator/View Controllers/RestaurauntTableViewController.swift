@@ -6,16 +6,24 @@
 //  Copyright © 2019 Morgan Smith. All rights reserved.
 //
 
+//Restaurant selection: chillis, pf changs, california pizza kitchen, cheesecake factory, Yard house
+
+
 import UIKit
 
 class RestaurauntTableViewController: UITableViewController {
     
+    var restaurants: [Restaurant] = [Restaurant(name: "PF Changs", details: "P.F. Chang's offers authentic Chinese food & Asian cuisine in a casual dining atmosphere", selected: false),
+                                     Restaurant(name: "Chillis", details: "Chillis Details",selected: false),
+                                     Restaurant(name: "California pizza kitchen", details: "CPK Details", selected: false),
+                                     Restaurant(name: "Cheesecake Factory", details: "Cheesecake Factory Details", selected: false),
+                                     Restaurant(name: "Yard House", details: "Yard House Details", selected: false)]
+    
+
     //outlet tableView
 
     @IBOutlet var restTableView: UITableView!
     
-    var restaurants: [Restaurant] = [Restaurant(name: "PF Changs", details: "P.F. Chang's offers authentic Chinese food & Asian cuisine in a casual dining atmosphere")]
-       
     override func viewDidLoad() {
 //        self.restTableView.delegate = self
 //        self.restTableView.dataSource = self
@@ -36,7 +44,10 @@ class RestaurauntTableViewController: UITableViewController {
 
     override func tableView(_ restTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurauntCell", for: indexPath) as? RestaurauntTableViewCell else { return UITableViewCell() }
-        let restaurant = restaurants
+        let restaurant = restaurants[indexPath.row]
+        cell.restaurantNameLbl.text = restaurant.name
+        cell.restaurantDetailsLbl.text = restaurant.details
+        cell.selectUnselectBtn.isSelected = restaurant.selected
         return cell
     }
    

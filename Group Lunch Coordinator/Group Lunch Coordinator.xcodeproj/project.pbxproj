@@ -20,8 +20,9 @@
 		023D54DC23B0011A002FE37E /* UserTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */; };
 		A645BB8423B1559A00F6C350 /* RestaurauntTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8323B1559A00F6C350 /* RestaurauntTableViewCell.swift */; };
 		A645BB8923B157F300F6C350 /* RestaurauntTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8823B157F300F6C350 /* RestaurauntTableViewController.swift */; };
-		A645BB8D23B1588600F6C350 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8C23B1588600F6C350 /* Restaurants.swift */; };
+		A645BB8D23B1588600F6C350 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8C23B1588600F6C350 /* Restaurant.swift */; };
 		A645BB8F23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8E23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift */; };
+		A645BB9223B3089F00F6C350 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB9123B3089F00F6C350 /* RestaurantDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +41,9 @@
 		023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		A645BB8323B1559A00F6C350 /* RestaurauntTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurauntTableViewCell.swift; sourceTree = "<group>"; };
 		A645BB8823B157F300F6C350 /* RestaurauntTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurauntTableViewController.swift; sourceTree = "<group>"; };
-		A645BB8C23B1588600F6C350 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
+		A645BB8C23B1588600F6C350 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		A645BB8E23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		A645BB9123B3089F00F6C350 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				023D54D123AC580B002FE37E /* LoginViewController.swift */,
 				023D54D723AFFB5C002FE37E /* UserTableViewController.swift */,
 				A645BB8823B157F300F6C350 /* RestaurauntTableViewController.swift */,
+				A645BB9123B3089F00F6C350 /* RestaurantDetailsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -111,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				023D54D523AC6E4C002FE37E /* User.swift */,
-				A645BB8C23B1588600F6C350 /* Restaurants.swift */,
+				A645BB8C23B1588600F6C350 /* Restaurant.swift */,
 				A645BB8E23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift */,
 				023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */,
 			);
@@ -201,7 +204,8 @@
 				023D54D223AC580B002FE37E /* LoginViewController.swift in Sources */,
 				023D54BE23A9D1EA002FE37E /* AppDelegate.swift in Sources */,
 				A645BB8F23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift in Sources */,
-				A645BB8D23B1588600F6C350 /* Restaurants.swift in Sources */,
+				A645BB8D23B1588600F6C350 /* Restaurant.swift in Sources */,
+				A645BB9223B3089F00F6C350 /* RestaurantDetailsViewController.swift in Sources */,
 				023D54DA23AFFDBA002FE37E /* UserTableViewCell.swift in Sources */,
 				023D54D423AC6D9E002FE37E /* UserController.swift in Sources */,
 				023D54D623AC6E4C002FE37E /* User.swift in Sources */,

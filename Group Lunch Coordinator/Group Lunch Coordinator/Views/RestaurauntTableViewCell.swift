@@ -15,7 +15,7 @@ class RestaurauntTableViewCell: UITableViewCell {
     //IB Outlets
     
     @IBOutlet weak var restaurantNameLbl: UILabel!
-    @IBOutlet weak var restaurantDetailsLbl: UIButton!
+    @IBOutlet weak var restaurantDetailsLbl: UILabel!
     @IBOutlet weak var selectUnselectBtn: UIButton!
     
 

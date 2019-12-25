@@ -205,6 +205,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="u4Z-LZ-yPX"/>
                     <connections>
+                        <outlet property="restTableView" destination="S6W-Rn-kHf" id="Me2-4W-46e"/>
                         <outlet property="tableView" destination="S6W-Rn-kHf" id="s1g-Zb-c6P"/>
                     </connections>
                 </tableViewController>
@@ -212,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="2627.536231884058" y="91.741071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Details View Controller-->
         <scene sceneID="deg-iJ-pmv">
             <objects>
-                <viewController id="84h-Bf-B1z" sceneMemberID="viewController">
+                <viewController id="84h-Bf-B1z" customClass="RestaurantDetailsViewController" customModule="Group_Lunch_Coordinator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4H-e9-twG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
