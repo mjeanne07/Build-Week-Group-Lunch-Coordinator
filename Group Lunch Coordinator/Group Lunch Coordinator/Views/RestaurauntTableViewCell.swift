@@ -15,19 +15,19 @@ class RestaurauntTableViewCell: UITableViewCell {
     //IB Outlets
     
     @IBOutlet weak var restaurantNameLbl: UILabel!
-    @IBOutlet weak var restaurantDetailsLbl: UILabel!
+    @IBOutlet weak var restaurantDetailLbl: UILabel!
     @IBOutlet weak var selectUnselectBtn: UIButton!
     
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        // Initialization code
+//    }
+//
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//
+//        // Configure the view for the selected state
+//    }
 
 }

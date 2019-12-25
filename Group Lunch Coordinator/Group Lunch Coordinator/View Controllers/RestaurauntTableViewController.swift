@@ -13,7 +13,7 @@ import UIKit
 
 class RestaurauntTableViewController: UITableViewController {
     
-    var restaurants: [Restaurant] = [Restaurant(name: "PF Changs", details: "P.F. Chang's offers authentic Chinese food & Asian cuisine in a casual dining atmosphere", selected: false),
+    var restaurants: [Restaurant] = [Restaurant(name: "PF Changs", details: "P.F. Chang's Details", selected: false),
                                      Restaurant(name: "Chillis", details: "Chillis Details",selected: false),
                                      Restaurant(name: "California pizza kitchen", details: "CPK Details", selected: false),
                                      Restaurant(name: "Cheesecake Factory", details: "Cheesecake Factory Details", selected: false),
@@ -46,7 +46,7 @@ class RestaurauntTableViewController: UITableViewController {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurauntCell", for: indexPath) as? RestaurauntTableViewCell else { return UITableViewCell() }
         let restaurant = restaurants[indexPath.row]
         cell.restaurantNameLbl.text = restaurant.name
-        cell.restaurantDetailsLbl.text = restaurant.details
+        cell.restaurantDetailLbl.text = restaurant.details
         cell.selectUnselectBtn.isSelected = restaurant.selected
         return cell
     }
@@ -88,16 +88,22 @@ class RestaurauntTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        //where are we going?
+        if segue.identifier == "ShowRestaurauntDetail" {
+       
+        // what information is being passed?
+            if let indexPath = tableView.indexPathForSelectedRow,
+                let ResturauntDetailVC = segue.destination as? RestaurantDetailsViewController {
+                let restauraunt = restaurants[indexPath.row]
+                ResturauntDetailVC.cellRestName = restauraunt
+            }
+        }
     }
-    */
-
 }
 
 //extension RestaurauntTableViewController: RestaurantTableViewCellDelegate {
