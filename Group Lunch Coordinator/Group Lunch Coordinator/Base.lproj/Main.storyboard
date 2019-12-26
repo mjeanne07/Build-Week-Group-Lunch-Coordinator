@@ -211,6 +211,7 @@
                                     <outlet property="restaurantDetailLbl" destination="OND-Xy-G80" id="YaA-YB-ZV4"/>
                                     <outlet property="restaurantNameLbl" destination="5Y4-JW-njZ" id="h9i-RD-eI5"/>
                                     <outlet property="selectUnselectBtn" destination="81F-gh-WXN" id="KNb-Np-Lew"/>
+                                    <segue destination="84h-Bf-B1z" kind="presentation" id="o8Y-rV-VU4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -239,18 +240,29 @@
             <objects>
                 <viewController id="84h-Bf-B1z" customClass="RestaurantDetailsViewController" customModule="Group_Lunch_Coordinator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4H-e9-twG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7E-iP-ty0">
-                                <rect key="frame" x="141" y="141" width="132" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7E-iP-ty0">
+                                <rect key="frame" x="141" y="20" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HyN-Sn-bUx">
+                                <rect key="frame" x="87" y="92" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HyN-Sn-bUx" firstAttribute="centerX" secondItem="i4H-e9-twG" secondAttribute="centerX" id="8dI-QR-T2G"/>
+                            <constraint firstItem="Z7E-iP-ty0" firstAttribute="leading" secondItem="eoD-Ev-eUX" secondAttribute="leading" constant="141" id="Etr-Hs-YFd"/>
+                            <constraint firstItem="Z7E-iP-ty0" firstAttribute="top" secondItem="eoD-Ev-eUX" secondAttribute="top" constant="20" id="Ozj-Nx-DdR"/>
+                            <constraint firstItem="eoD-Ev-eUX" firstAttribute="trailing" secondItem="Z7E-iP-ty0" secondAttribute="trailing" constant="141" id="QAt-a7-7jt"/>
+                            <constraint firstItem="eoD-Ev-eUX" firstAttribute="bottom" secondItem="HyN-Sn-bUx" secondAttribute="bottom" constant="588" id="Waj-uB-JrP"/>
+                            <constraint firstItem="HyN-Sn-bUx" firstAttribute="leading" secondItem="eoD-Ev-eUX" secondAttribute="leading" constant="87" id="Z83-d9-Pze"/>
+                            <constraint firstItem="HyN-Sn-bUx" firstAttribute="top" secondItem="Z7E-iP-ty0" secondAttribute="bottom" constant="51" id="eaT-oG-wQX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eoD-Ev-eUX"/>
                     </view>
                 </viewController>

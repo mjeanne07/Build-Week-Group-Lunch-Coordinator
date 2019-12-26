@@ -15,7 +15,7 @@ class RestaurauntTableViewController: UITableViewController {
     
     var restaurants: [Restaurant] = [Restaurant(name: "PF Changs", details: "P.F. Chang's Details", selected: false),
                                      Restaurant(name: "Chillis", details: "Chillis Details",selected: false),
-                                     Restaurant(name: "California pizza kitchen", details: "CPK Details", selected: false),
+                                     Restaurant(name: "California Pizza Kitchen", details: "CPK Details", selected: false),
                                      Restaurant(name: "Cheesecake Factory", details: "Cheesecake Factory Details", selected: false),
                                      Restaurant(name: "Yard House", details: "Yard House Details", selected: false)]
     
