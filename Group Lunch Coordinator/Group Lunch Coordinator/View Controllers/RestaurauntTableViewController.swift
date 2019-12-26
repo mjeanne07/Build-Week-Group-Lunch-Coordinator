@@ -47,7 +47,7 @@ class RestaurauntTableViewController: UITableViewController {
         let restaurant = restaurants[indexPath.row]
         cell.restaurantNameLbl.text = restaurant.name
         cell.restaurantDetailLbl.text = restaurant.details
-        cell.selectUnselectBtn.isSelected = restaurant.selected
+//        cell.selectUnselectBtn.isSelected = restaurant.selected
         return cell
     }
    
@@ -104,16 +104,14 @@ class RestaurauntTableViewController: UITableViewController {
             }
         }
     }
+    
+    // IB ACTION Save Btn
+    @IBAction func saveSelectionBtnPressed(_ sender: UIBarButtonItem) {
+    }
+    
 }
 
-//extension RestaurauntTableViewController: RestaurantTableViewCellDelegate {
-//    func toggleHasBeenSelected(for cell: RestaurauntTableViewCell) {
-//        guard let indexPath = tableView.indexPath(for: cell) else { return }
-//        cell.delegate = self
-//        tableView.reloadData()
-//    }
-//
-//}
+
 
 
  

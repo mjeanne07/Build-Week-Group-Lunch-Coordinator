@@ -23,6 +23,7 @@
 		A645BB8D23B1588600F6C350 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8C23B1588600F6C350 /* Restaurant.swift */; };
 		A645BB8F23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8E23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift */; };
 		A645BB9223B3089F00F6C350 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB9123B3089F00F6C350 /* RestaurantDetailsViewController.swift */; };
+		A645BB9523B46EEF00F6C350 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB9423B46EEF00F6C350 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A645BB8C23B1588600F6C350 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		A645BB8E23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		A645BB9123B3089F00F6C350 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
+		A645BB9423B46EEF00F6C350 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				023D54BF23A9D1EA002FE37E /* SceneDelegate.swift */,
 				023D54C623A9D1EE002FE37E /* Assets.xcassets */,
 				023D54C823A9D1EE002FE37E /* LaunchScreen.storyboard */,
+				A645BB9423B46EEF00F6C350 /* CheckBox.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				023D54D423AC6D9E002FE37E /* UserController.swift in Sources */,
 				023D54D623AC6E4C002FE37E /* User.swift in Sources */,
 				023D54D823AFFB5C002FE37E /* UserTableViewController.swift in Sources */,
+				A645BB9523B46EEF00F6C350 /* CheckBox.swift in Sources */,
 				A645BB8423B1559A00F6C350 /* RestaurauntTableViewCell.swift in Sources */,
 				023D54C023A9D1EA002FE37E /* SceneDelegate.swift in Sources */,
 				023D54DC23B0011A002FE37E /* UserTableViewCellDelegate.swift in Sources */,
