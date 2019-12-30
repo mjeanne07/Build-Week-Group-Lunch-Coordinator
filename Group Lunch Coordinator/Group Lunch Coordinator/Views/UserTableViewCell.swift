@@ -33,6 +33,7 @@ class UserTableViewCell: UITableViewCell {
     }
    
     @IBAction func selectRestaurant(_ sender: UIButton) {
+    
     }
     
      var user: User? {

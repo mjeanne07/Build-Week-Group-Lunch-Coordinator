@@ -18,6 +18,7 @@
 		023D54D823AFFB5C002FE37E /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54D723AFFB5C002FE37E /* UserTableViewController.swift */; };
 		023D54DA23AFFDBA002FE37E /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54D923AFFDBA002FE37E /* UserTableViewCell.swift */; };
 		023D54DC23B0011A002FE37E /* UserTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */; };
+		0273B0AB23B98F73003CF4DD /* RestaurantSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273B0AA23B98F73003CF4DD /* RestaurantSelectionDelegate.swift */; };
 		A645BB8423B1559A00F6C350 /* RestaurauntTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8323B1559A00F6C350 /* RestaurauntTableViewCell.swift */; };
 		A645BB8923B157F300F6C350 /* RestaurauntTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8823B157F300F6C350 /* RestaurauntTableViewController.swift */; };
 		A645BB8D23B1588600F6C350 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645BB8C23B1588600F6C350 /* Restaurant.swift */; };
@@ -40,6 +41,7 @@
 		023D54D723AFFB5C002FE37E /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
 		023D54D923AFFDBA002FE37E /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		0273B0AA23B98F73003CF4DD /* RestaurantSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSelectionDelegate.swift; sourceTree = "<group>"; };
 		A645BB8323B1559A00F6C350 /* RestaurauntTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurauntTableViewCell.swift; sourceTree = "<group>"; };
 		A645BB8823B157F300F6C350 /* RestaurauntTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurauntTableViewController.swift; sourceTree = "<group>"; };
 		A645BB8C23B1588600F6C350 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				023D54D523AC6E4C002FE37E /* User.swift */,
 				A645BB8C23B1588600F6C350 /* Restaurant.swift */,
 				A645BB8E23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift */,
+				0273B0AA23B98F73003CF4DD /* RestaurantSelectionDelegate.swift */,
 				023D54DB23B0011A002FE37E /* UserTableViewCellDelegate.swift */,
 			);
 			path = Model;
@@ -216,6 +219,7 @@
 				023D54BE23A9D1EA002FE37E /* AppDelegate.swift in Sources */,
 				A645BB8F23B15E1F00F6C350 /* RestaurantTableViewCellDelegate.swift in Sources */,
 				A645BB8D23B1588600F6C350 /* Restaurant.swift in Sources */,
+				0273B0AB23B98F73003CF4DD /* RestaurantSelectionDelegate.swift in Sources */,
 				A645BB9223B3089F00F6C350 /* RestaurantDetailsViewController.swift in Sources */,
 				023D54DA23AFFDBA002FE37E /* UserTableViewCell.swift in Sources */,
 				023D54D423AC6D9E002FE37E /* UserController.swift in Sources */,

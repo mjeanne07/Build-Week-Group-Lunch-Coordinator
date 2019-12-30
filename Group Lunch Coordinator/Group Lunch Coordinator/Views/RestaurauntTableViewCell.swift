@@ -11,12 +11,18 @@ import UIKit
 class RestaurauntTableViewCell: UITableViewCell {
     
     var delegate: RestaurantTableViewCellDelegate?
+   weak var selectionDelegate: RestaurantSelectionDelegate?
+    
     
     //IB Outlets
     
     @IBOutlet weak var restaurantNameLbl: UILabel!
     @IBOutlet weak var restaurantDetailLbl: UILabel!
     @IBOutlet weak var selectUnselectBtn: UIButton!
+    
+    @IBAction func selectionTapped(_ sender: Any) {
+        selectionDelegate?.changeSelection(cell: self)
+    }
     
 
 //    override func awakeFromNib() {

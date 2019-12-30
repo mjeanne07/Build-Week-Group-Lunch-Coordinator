@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2WX-hh-vYE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2WX-hh-vYE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -110,7 +110,7 @@
                                                             <state key="normal" title="Select Restaurant"/>
                                                             <connections>
                                                                 <action selector="selectRestaurant:" destination="GeZ-LU-VOF" eventType="touchUpInside" id="QoK-kH-daO"/>
-                                                                <segue destination="UAK-LR-wyh" kind="show" id="ZCb-EV-Efg"/>
+                                                                <segue destination="UAK-LR-wyh" kind="show" identifier="Selection" id="ZCb-EV-Efg"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -139,12 +139,14 @@
                             <outlet property="delegate" destination="YzY-AD-dqE" id="rCR-30-8Yz"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Cancel" id="yhH-j3-amm"/>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9NO-NR-TLl"/>
-                        <barButtonItem title="Save" id="tq3-Q4-3aC"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="wOc-Hm-xM8"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wOc-Hm-xM8">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="bbl-wq-vJE">
+                            <connections>
+                                <action selector="doneTapped:" destination="YzY-AD-dqE" id="y7b-Fv-sU7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHZ-r5-zeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -176,6 +178,9 @@
                                             <state key="normal" image="unchecked">
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                             </state>
+                                            <connections>
+                                                <action selector="selectionTapped:" destination="Kqh-Xr-skV" eventType="touchUpInside" id="Q4c-ew-w21"/>
+                                            </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-Zb-Ufa">
                                             <rect key="frame" x="40" y="21" width="90.5" height="58"/>
