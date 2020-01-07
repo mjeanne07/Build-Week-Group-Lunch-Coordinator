@@ -11,8 +11,9 @@ import UIKit
 class RestaurauntTableViewCell: UITableViewCell {
     
     var delegate: RestaurantTableViewCellDelegate?
-   var selectionDelegate: RestaurantSelectionDelegate?
-    
+    var selectionDelegate: RestaurantSelectionDelegate?
+    let userController = UserController.shared
+    var user: User?
     
     //IB Outlets
     
@@ -21,7 +22,10 @@ class RestaurauntTableViewCell: UITableViewCell {
     @IBOutlet weak var selectUnselectBtn: UIButton!
     
     @IBAction func selectionTapped(_ sender: Any) {
-        selectionDelegate?.changeSelection(cell: self)
+           guard let restaurantSelectionLabel = restaurantNameLbl.text,
+            let user = userController.signedInUser else {return}
+           
+        userController.updateSelection(user: user, withRestaurantSelection: restaurantSelectionLabel)
     }
     
 

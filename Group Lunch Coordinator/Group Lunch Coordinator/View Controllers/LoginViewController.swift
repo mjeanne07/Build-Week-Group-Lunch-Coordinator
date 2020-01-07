@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
         
         guard let destinationVC = segue.destination as? UserTableViewController else { return }
         
-        destinationVC.userController = userController
+       
     }
 }
     

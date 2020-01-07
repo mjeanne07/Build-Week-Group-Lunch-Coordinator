@@ -14,6 +14,9 @@ class UserController {
         loadFromPersistentStore()
     }
     
+    static let shared = UserController()
+    
+    var signedInUser: User?
     
     var users: [User] =
         [User(userName: "Rob"),
@@ -24,7 +27,7 @@ class UserController {
         let newUser = User(userName: userName)
         
         users.append(newUser)
-        
+        self.signedInUser = newUser
         saveToPersistentStore()
     }
     

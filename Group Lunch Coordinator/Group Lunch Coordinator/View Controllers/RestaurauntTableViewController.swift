@@ -21,7 +21,7 @@ class RestaurauntTableViewController: UITableViewController, RestaurantSelection
 
     
     var user: User?
-    var userController: UserController?
+    let userController = UserController.shared
 
     
     var restaurants: [Restaurant] = [Restaurant(name: "PF Changs", details: "P.F. Chang's Details", selected: false),
@@ -38,7 +38,7 @@ class RestaurauntTableViewController: UITableViewController, RestaurantSelection
         
         let restaurantSelection = restaurant.name
         
-        userController?.updateSelection(user: user!, withRestaurantSelection: restaurantSelection)
+        userController.updateSelection(user: user!, withRestaurantSelection: restaurantSelection)
     }
     
     //outlet tableView
@@ -61,7 +61,8 @@ class RestaurauntTableViewController: UITableViewController, RestaurantSelection
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurauntCell", for: indexPath) as? RestaurauntTableViewCell else { return UITableViewCell() }
         
         cell.selectionDelegate = self
-        
+    
+        cell.user = user
         let restaurant = restaurants[indexPath.row]
         cell.restaurantNameLbl.text = restaurant.name
         cell.restaurantDetailLbl.text = restaurant.details

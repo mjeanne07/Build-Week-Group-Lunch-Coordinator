@@ -35,7 +35,7 @@ class UserTableViewController: UITableViewController, UserTableViewCellDelegate 
     }
     
     
-    var userController = UserController()
+    let userController = UserController.shared
     
     
     // MARK: - Table view data source
@@ -62,7 +62,7 @@ class UserTableViewController: UITableViewController, UserTableViewCellDelegate 
         let user = userFor(indexPath: indexPath)
         
         cell.user = user
-        
+    
         return cell
     }
     
@@ -99,7 +99,6 @@ class UserTableViewController: UITableViewController, UserTableViewCellDelegate 
      let user = userFor(indexPath: indexPath)
      
      destinationVC.user = user
-     destinationVC.userController = userController
      }
     }
      

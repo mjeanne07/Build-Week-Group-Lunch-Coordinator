@@ -11,6 +11,7 @@ import UIKit
 class UserTableViewCell: UITableViewCell {
 
      weak var delegate: UserTableViewCellDelegate?
+
     
     func updateViews() {
         guard let user = user else { return }
@@ -33,7 +34,7 @@ class UserTableViewCell: UITableViewCell {
     }
    
     @IBAction func selectRestaurant(_ sender: UIButton) {
-    
+
     }
     
      var user: User? {
