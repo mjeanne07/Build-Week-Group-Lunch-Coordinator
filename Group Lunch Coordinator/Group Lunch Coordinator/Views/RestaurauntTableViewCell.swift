@@ -11,7 +11,7 @@ import UIKit
 class RestaurauntTableViewCell: UITableViewCell {
     
     var delegate: RestaurantTableViewCellDelegate?
-   weak var selectionDelegate: RestaurantSelectionDelegate?
+   var selectionDelegate: RestaurantSelectionDelegate?
     
     
     //IB Outlets
