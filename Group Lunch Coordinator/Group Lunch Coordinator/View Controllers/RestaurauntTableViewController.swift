@@ -21,6 +21,7 @@ class RestaurauntTableViewController: UITableViewController, RestaurantSelection
 
     
     var user: User?
+    var signedInUser: User?
     let userController = UserController.shared
 
     
@@ -61,7 +62,7 @@ class RestaurauntTableViewController: UITableViewController, RestaurantSelection
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurauntCell", for: indexPath) as? RestaurauntTableViewCell else { return UITableViewCell() }
         
         cell.selectionDelegate = self
-    
+        cell.signedInUser = signedInUser
         cell.user = user
         let restaurant = restaurants[indexPath.row]
         cell.restaurantNameLbl.text = restaurant.name

@@ -14,6 +14,8 @@ class RestaurauntTableViewCell: UITableViewCell {
     var selectionDelegate: RestaurantSelectionDelegate?
     let userController = UserController.shared
     var user: User?
+    var signedInUser: User?
+   
     
     //IB Outlets
     

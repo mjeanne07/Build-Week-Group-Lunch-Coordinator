@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     }
  
     
-    var userController = UserController()
+     let userController = UserController.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
