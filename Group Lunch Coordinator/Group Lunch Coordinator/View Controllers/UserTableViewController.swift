@@ -33,9 +33,10 @@ class UserTableViewController: UITableViewController, UserTableViewCellDelegate 
         userController.updateLunchTime(for: user)
         tableView.reloadData()
     }
+    
     private func showAlert() {
-        
-        let alert = UIAlertController(title: "Time For Lunch!", message: "You will be leaving in 15 min for x location", preferredStyle: .alert)
+    
+       let alert = UIAlertController(title: "Time For Lunch!", message: "Hey \(userController.signedInUser.unsafelyUnwrapped.userName) Get ready! You will be leaving for \(userController.signedInUser.unsafelyUnwrapped.restaurantSelection) in 15 Minutes!", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
@@ -105,10 +106,8 @@ class UserTableViewController: UITableViewController, UserTableViewCellDelegate 
          let destinationVC = segue.destination as? RestaurauntTableViewController else { return }
      
      let user = userFor(indexPath: indexPath)
-     let signedInUser = userFor(indexPath: indexPath)
         
      destinationVC.user = user
-     destinationVC.signedInUser = signedInUser
      }
     }
      

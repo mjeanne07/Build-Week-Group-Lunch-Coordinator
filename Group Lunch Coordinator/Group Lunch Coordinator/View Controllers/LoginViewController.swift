@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userName: UITextField!
     
     @IBAction func joinButton(_ sender: Any) {
+        becomeFirstResponder()
         guard let userName = userName.text, userName != "" else {return}
         userController.createUser(withUserName: userName)
     }

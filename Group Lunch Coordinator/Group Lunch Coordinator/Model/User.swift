@@ -11,14 +11,18 @@
 
 import Foundation
 
-struct User: Equatable, Codable {
-    var userName: String
-    var lunchTime: Bool //false = early lunch
-    var restaurantSelection: String
-    
+class User: Codable, Equatable {
+  var userName: String
+  var lunchTime: Bool //false = early lunch
+  var restaurantSelection: String
+   
     init(userName: String, lunchTime: Bool = false, restaurantSelection: String = "No selection" ) {
-        self.userName = userName
-        self.lunchTime = lunchTime
-        self.restaurantSelection = restaurantSelection
-    }
+    self.userName = userName
+    self.lunchTime = lunchTime
+    self.restaurantSelection = restaurantSelection
+  }
+  static func == (lhs: User, rhs: User) -> Bool {
+    return lhs.userName == rhs.userName && lhs.lunchTime == rhs.lunchTime && lhs.restaurantSelection == rhs.restaurantSelection
+  }
+   
 }
