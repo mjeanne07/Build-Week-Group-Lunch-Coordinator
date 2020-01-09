@@ -10,6 +10,13 @@ import UIKit
 
 class RestaurantDetailsViewController: UIViewController {
     
+    //ib outlets
+    
+      @IBOutlet weak var restName: UILabel!
+      @IBOutlet weak var restLocation: UILabel!
+      @IBOutlet weak var restNumber: UILabel!
+      @IBOutlet weak var restType: UILabel!
+      @IBOutlet weak var restImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,15 +29,11 @@ class RestaurantDetailsViewController: UIViewController {
           restLocation.text = cellRestName.location
           restNumber.text = cellRestName.phone
           restType.text = cellRestName.type
-          
+        restImage.image = cellRestName.image
       }
     
     var cellRestName: Restaurant?
-    
-    @IBOutlet weak var restName: UILabel!
-    @IBOutlet weak var restLocation: UILabel!
-    @IBOutlet weak var restNumber: UILabel!
-    @IBOutlet weak var restType: UILabel!
+  
 
 
 }

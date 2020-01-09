@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2WX-hh-vYE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2WX-hh-vYE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -295,15 +295,24 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CGE-pe-CfH">
+                                <rect key="frame" x="20" y="30" width="374" height="218"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="2j4-xy-ZFg" firstAttribute="top" secondItem="CGE-pe-CfH" secondAttribute="bottom" constant="99.5" id="173-5c-1Cq"/>
                             <constraint firstItem="2j4-xy-ZFg" firstAttribute="centerX" secondItem="i4H-e9-twG" secondAttribute="centerX" id="2Km-CS-mzn"/>
+                            <constraint firstItem="CGE-pe-CfH" firstAttribute="centerX" secondItem="i4H-e9-twG" secondAttribute="centerX" id="7tS-HE-8kw"/>
                             <constraint firstItem="2j4-xy-ZFg" firstAttribute="centerY" secondItem="i4H-e9-twG" secondAttribute="centerY" id="A9g-EL-sHf"/>
+                            <constraint firstItem="CGE-pe-CfH" firstAttribute="top" secondItem="eoD-Ev-eUX" secondAttribute="top" constant="30" id="mjG-wB-Jlp"/>
+                            <constraint firstItem="CGE-pe-CfH" firstAttribute="leading" secondItem="eoD-Ev-eUX" secondAttribute="leading" constant="20" id="nyf-Ze-Oau"/>
+                            <constraint firstItem="eoD-Ev-eUX" firstAttribute="trailing" secondItem="CGE-pe-CfH" secondAttribute="trailing" constant="20" id="rzL-qA-HSG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eoD-Ev-eUX"/>
                     </view>
                     <connections>
+                        <outlet property="restImage" destination="CGE-pe-CfH" id="Fsr-0C-jKq"/>
                         <outlet property="restLocation" destination="YQk-5R-E5h" id="xo7-0J-30c"/>
                         <outlet property="restName" destination="lRl-g7-Bw7" id="P14-Ax-E3P"/>
                         <outlet property="restNumber" destination="eGc-9k-mpd" id="mhR-Tu-XwF"/>

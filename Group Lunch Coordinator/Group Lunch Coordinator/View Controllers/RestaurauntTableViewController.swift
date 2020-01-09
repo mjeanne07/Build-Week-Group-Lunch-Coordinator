@@ -25,11 +25,11 @@ class RestaurauntTableViewController: UITableViewController, RestaurantSelection
     let userController = UserController.shared
 
     
-    var restaurants: [Restaurant] = [Restaurant(name: "PF Changs", details: "P.F. Chang's Details", selected: false, location: "Port Imperial Blvd, NY", phone: "(201) 866-7790", type: "Creative Chinese fare"),
-                                     Restaurant(name: "Chillis", details: "Chillis Details",selected: false, location: "Glendale, NY", phone: "(718) 366-4272", type: "Classic Tex-Mex and American fare"),
-                                     Restaurant(name: "California Pizza Kitchen", details: "CPK Details", selected: false, location: "Atlas Park, NY", phone: "(718) 894-9400", type: "Inventive pizza, pasta, and salad"),
-                                     Restaurant(name: "Cheesecake Factory", details: "Cheesecake Factory Details", selected: false, location: "Queens Blvd, NY", phone: "(718) 699-1212", type: "American fare and signature cheesecakes"),
-                                     Restaurant(name: "Yard House", details: "Yard House Details", selected: false, location: "Yonkers, NY", phone: "(914) 375-9273", type: "Sports-bar with American fare and craft beer")]
+    var restaurants: [Restaurant] = [Restaurant(name: "PF Changs", details: "P.F. Chang's Details", selected: false, location: "Port Imperial Blvd, NY", phone: "(201) 866-7790", type: "Creative Chinese fare", image: UIImage(named: "pfchang.jpg")!),
+                                     Restaurant(name: "Chillis", details: "Chillis Details",selected: false, location: "Glendale, NY", phone: "(718) 366-4272", type: "Classic Tex-Mex and American fare", image: UIImage(named: "chillis.png")!),
+                                     Restaurant(name: "California Pizza Kitchen", details: "CPK Details", selected: false, location: "Atlas Park, NY", phone: "(718) 894-9400", type: "Inventive pizza, pasta, and salad", image: UIImage(named: "cpk.jpg")!),
+                                     Restaurant(name: "Cheesecake Factory", details: "Cheesecake Factory Details", selected: false, location: "Queens Blvd, NY", phone: "(718) 699-1212", type: "American fare and signature cheesecakes", image: UIImage(named: "cheesecake.jpg")!),
+                                     Restaurant(name: "Yard House", details: "Yard House Details", selected: false, location: "Yonkers, NY", phone: "(914) 375-9273", type: "Sports-bar with American fare and craft beer", image: UIImage(named: "yardhouse.png")!)]
     
     
     func changeSelection(cell: RestaurauntTableViewCell) {
