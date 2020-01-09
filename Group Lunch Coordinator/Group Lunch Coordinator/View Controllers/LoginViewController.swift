@@ -10,6 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var logoImage: UIImageView!
     
     @IBOutlet weak var userName: UITextField!
     
@@ -18,13 +19,16 @@ class LoginViewController: UIViewController {
         guard let userName = userName.text, userName != "" else {return}
         userController.createUser(withUserName: userName)
     }
- 
+   
+    func updateViews () {
+    logoImage.image = UIImage(named: "hh_logo")
+    }
     
      let userController = UserController.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateViews()
         // Do any additional setup after loading the view.
     }
     

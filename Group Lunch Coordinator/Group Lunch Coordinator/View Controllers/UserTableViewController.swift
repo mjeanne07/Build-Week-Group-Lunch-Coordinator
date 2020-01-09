@@ -35,12 +35,20 @@ class UserTableViewController: UITableViewController, UserTableViewCellDelegate 
     }
     
     private func showAlert() {
-    
-       let alert = UIAlertController(title: "Time For Lunch!", message: "Hey \(userController.signedInUser.unsafelyUnwrapped.userName) Get ready! You will be leaving for \(userController.signedInUser.unsafelyUnwrapped.restaurantSelection) in 15 Minutes!", preferredStyle: .alert)
+        if userController.signedInUser?.lunchTime == false {
+       let alert = UIAlertController(title: "Time For Lunch!", message: "Hey \(userController.signedInUser.unsafelyUnwrapped.userName) get ready! Your early lunch group will be leaving for \(userController.signedInUser.unsafelyUnwrapped.restaurantSelection) in 15 Minutes!", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
-        self.present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil) } else {
+           
+            let alert = UIAlertController(title: "Time For Lunch!", message: "Hey \(userController.signedInUser.unsafelyUnwrapped.userName) get ready! Your late lunch group will be leaving for \(userController.signedInUser.unsafelyUnwrapped.restaurantSelection) in 45 Minutes!", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+                self.present(alert, animated: true, completion: nil)
+        }
+            
     }
     
     
