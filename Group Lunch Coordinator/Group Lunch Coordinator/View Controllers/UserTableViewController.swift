@@ -75,22 +75,26 @@ class UserTableViewController: UITableViewController, UserTableViewCellDelegate 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as? UserTableViewCell else { return UITableViewCell() }
         
         cell.delegate = self
-        
         let user = userFor(indexPath: indexPath)
-        
         cell.user = user
-    
         return cell
     }
+   
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView else { return }
+        headerView.tintColor = #colorLiteral(red: 0.5473862886, green: 0.06035543233, blue: 0, alpha: 1)
+        headerView.textLabel?.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    }
+
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         if section == 0 {
             guard userController.earlyUsers.count > 0 else { return nil }
-            return "Early Lunch"
+            return "Early Lunch Group"
         } else {
             guard userController.lateUsers.count > 0 else { return nil }
-            return "Late Lunch"
+            return "Late Lunch Group"
         }
     }
     

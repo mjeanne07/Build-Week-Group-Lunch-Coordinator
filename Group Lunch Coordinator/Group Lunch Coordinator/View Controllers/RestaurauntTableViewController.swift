@@ -2,7 +2,7 @@
 //  RestaurauntTableViewController.swift
 //  Group Lunch Coordinator
 //
-//  Created by SenorLappy on 23/12/19.
+//  Created by Sal Amer on 23/12/19.
 //  Copyright © 2019 Morgan Smith. All rights reserved.
 //
 
@@ -34,11 +34,8 @@ class RestaurauntTableViewController: UITableViewController, RestaurantSelection
     
     func changeSelection(cell: RestaurauntTableViewCell) {
         guard let indexPath = tableView.indexPath(for: cell) else {return}
-        
         let restaurant = restaurants[indexPath.row]
-        
         let restaurantSelection = restaurant.name
-        
         userController.updateSelection(user: user!, withRestaurantSelection: restaurantSelection)
     }
     

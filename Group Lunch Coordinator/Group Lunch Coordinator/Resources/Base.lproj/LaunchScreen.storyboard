@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hhlogo" translatesAutoresizingMaskIntoConstraints="NO" id="gnY-Ls-brV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hhlogofinal" translatesAutoresizingMaskIntoConstraints="NO" id="gnY-Ls-brV">
                                 <rect key="frame" x="87" y="310" width="240" height="276"/>
                             </imageView>
                         </subviews>
@@ -35,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hhlogo" width="500" height="500"/>
+        <image name="hhlogofinal" width="512" height="512"/>
     </resources>
 </document>

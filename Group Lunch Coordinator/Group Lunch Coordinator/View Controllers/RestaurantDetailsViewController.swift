@@ -2,7 +2,7 @@
 //  RestaurantDetailsViewController.swift
 //  Group Lunch Coordinator
 //
-//  Created by SenorLappy on 24/12/19.
+//  Created by Sal Amer on 24/12/19.
 //  Copyright © 2019 Morgan Smith. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  Restaurants.swift
 //  Group Lunch Coordinator
 //
-//  Created by SenorLappy on 23/12/19.
+//  Created by Sal Amer on 23/12/19.
 //  Copyright © 2019 Morgan Smith. All rights reserved.
 //
 //Restaurant selection: chillis, pf changs, california pizza kitchen, cheesecake factory, Yard house
