@@ -18,9 +18,9 @@ class UserTableViewCell: UITableViewCell {
         
         userName.text = user.userName
         if user.lunchTime == false {
-            lunchTimeLabel.setTitle("Early", for: .normal)
+            lunchTimeLabel.setTitle("Early Group", for: .normal)
         } else {
-            lunchTimeLabel.setTitle("Late", for: .normal)
+            lunchTimeLabel.setTitle("Late Group", for: .normal)
         }
         restaurantSelection.text = user.restaurantSelection
     }

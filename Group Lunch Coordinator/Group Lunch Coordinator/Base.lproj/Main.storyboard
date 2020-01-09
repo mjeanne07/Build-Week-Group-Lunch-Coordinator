@@ -18,19 +18,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="VCN-n2-xaB">
                                 <rect key="frame" x="55" y="223" width="304" height="502"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="200" verticalCompressionResistancePriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="x2g-Ja-y6Z">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="232"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="200" verticalCompressionResistancePriority="200" image="hhlogo" translatesAutoresizingMaskIntoConstraints="NO" id="x2g-Ja-y6Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="226"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="IQg-UT-yqI">
-                                        <rect key="frame" x="0.0" y="261" width="304" height="241"/>
+                                        <rect key="frame" x="0.0" y="255" width="304" height="247"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Hungry Homies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-a6-as9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="HUNGRY HOMIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZU7-a6-as9">
                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="aFm-mg-601"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="40"/>
-                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="40"/>
+                                                <color key="textColor" red="0.54738628860000005" green="0.06035543233" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hK6-Wc-Pbk">
@@ -39,9 +39,12 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkJ-hc-22P">
-                                                <rect key="frame" x="0.0" y="204" width="304" height="37"/>
-                                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="25"/>
-                                                <state key="normal" title="Join!"/>
+                                                <rect key="frame" x="0.0" y="204" width="304" height="43"/>
+                                                <color key="backgroundColor" red="0.54738628860000005" green="0.06035543233" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
+                                                <state key="normal" title="Join!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="joinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clH-AW-C6J"/>
                                                     <segue destination="YzY-AD-dqE" kind="show" identifier="Join" id="Pkj-xQ-chR"/>
@@ -83,49 +86,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" id="GeZ-LU-VOF" customClass="UserTableViewCell" customModule="Group_Lunch_Coordinator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="87.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="108" id="GeZ-LU-VOF" customClass="UserTableViewCell" customModule="Group_Lunch_Coordinator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GeZ-LU-VOF" id="C8A-1X-SLk">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="87.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="z6p-PJ-piP">
-                                            <rect key="frame" x="10" y="10" width="394" height="67.5"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="bfH-HR-Iqu">
+                                            <rect key="frame" x="10" y="10" width="394" height="88"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uoh-T3-8S7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="164.5" height="67.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uoh-T3-8S7">
+                                                    <rect key="frame" x="0.0" y="14.5" width="183.5" height="59"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvy-x8-aoS">
-                                                            <rect key="frame" x="0.0" y="0.0" width="164.5" height="27"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="47.5" y="0.0" width="89" height="19.5"/>
+                                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4F-BA-Wbe">
-                                                            <rect key="frame" x="0.0" y="47" width="164.5" height="20.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="20.5" id="RuY-1N-HWi"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
-                                                            <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="I4F-BA-Wbe">
+                                                            <rect key="frame" x="8.5" y="39.5" width="166.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                                            <color key="textColor" red="0.54738628860000005" green="0.06035543233" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bT3-ZC-iqG">
-                                                    <rect key="frame" x="217.5" y="0.0" width="176.5" height="67.5"/>
+                                                    <rect key="frame" x="223.5" y="8" width="170.5" height="72"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEI-Dl-VZv">
-                                                            <rect key="frame" x="71.5" y="0.0" width="34" height="30.5"/>
-                                                            <state key="normal" title="Early"/>
+                                                            <rect key="frame" x="65" y="0.0" width="41" height="32"/>
+                                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                                            <state key="normal" title="Early">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
                                                             <connections>
                                                                 <action selector="changeLunchTime:" destination="GeZ-LU-VOF" eventType="touchUpInside" id="QMf-AD-fYX"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXc-oY-Cp6">
-                                                            <rect key="frame" x="27.5" y="37.5" width="122" height="30"/>
-                                                            <state key="normal" title="Select Restaurant"/>
+                                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXc-oY-Cp6">
+                                                            <rect key="frame" x="10" y="39" width="151" height="33"/>
+                                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                            <state key="normal" title="Select Restaurant">
+                                                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
                                                             <connections>
                                                                 <action selector="selectRestaurant:" destination="GeZ-LU-VOF" eventType="touchUpInside" id="QoK-kH-daO"/>
                                                                 <segue destination="UAK-LR-wyh" kind="show" identifier="Selection" id="ZCb-EV-Efg"/>
@@ -137,12 +143,10 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="z6p-PJ-piP" firstAttribute="centerX" secondItem="C8A-1X-SLk" secondAttribute="centerX" id="5MR-Wb-3zL"/>
-                                        <constraint firstAttribute="bottom" secondItem="z6p-PJ-piP" secondAttribute="bottom" constant="10" id="W3S-dL-VmN"/>
-                                        <constraint firstAttribute="trailing" secondItem="z6p-PJ-piP" secondAttribute="trailing" constant="10" id="WBF-2z-RXE"/>
-                                        <constraint firstItem="z6p-PJ-piP" firstAttribute="leading" secondItem="C8A-1X-SLk" secondAttribute="leading" constant="10" id="XNe-jO-FGO"/>
-                                        <constraint firstItem="z6p-PJ-piP" firstAttribute="centerY" secondItem="C8A-1X-SLk" secondAttribute="centerY" id="d5J-Qu-VBd"/>
-                                        <constraint firstItem="z6p-PJ-piP" firstAttribute="top" secondItem="C8A-1X-SLk" secondAttribute="top" constant="10" id="qZg-Bf-Meb"/>
+                                        <constraint firstAttribute="trailing" secondItem="bfH-HR-Iqu" secondAttribute="trailing" constant="10" id="ASt-IF-e0g"/>
+                                        <constraint firstAttribute="bottom" secondItem="bfH-HR-Iqu" secondAttribute="bottom" constant="10" id="jxg-Ns-Sha"/>
+                                        <constraint firstItem="bfH-HR-Iqu" firstAttribute="top" secondItem="C8A-1X-SLk" secondAttribute="top" constant="10" id="kJ9-dL-WZ5"/>
+                                        <constraint firstItem="bfH-HR-Iqu" firstAttribute="leading" secondItem="C8A-1X-SLk" secondAttribute="leading" constant="10" id="w7m-Pl-TST"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -201,12 +205,12 @@
                                             </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-Zb-Ufa">
-                                            <rect key="frame" x="40" y="21" width="92" height="58"/>
+                                            <rect key="frame" x="40" y="21" width="93" height="58"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="5Y4-JW-njZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="92" height="29.5"/>
-                                                    <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="93" height="29.5"/>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                    <color key="textColor" red="0.54738628860000005" green="0.06035543233" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OND-Xy-G80">
@@ -267,36 +271,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="2j4-xy-ZFg">
-                                <rect key="frame" x="77.5" y="347.5" width="259.5" height="147"/>
+                                <rect key="frame" x="60" y="339" width="294" height="164"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRl-g7-Bw7">
-                                        <rect key="frame" x="0.0" y="0.0" width="259.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
+                                        <color key="textColor" red="0.54738628860000005" green="0.06035543233" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQk-5R-E5h">
-                                        <rect key="frame" x="99" y="54" width="61.5" height="15"/>
-                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
+                                        <rect key="frame" x="115.5" y="60.5" width="63" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGc-9k-mpd">
-                                        <rect key="frame" x="76" y="93" width="107.5" height="15"/>
-                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
+                                        <rect key="frame" x="91.5" y="103" width="111.5" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Type" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LQf-DP-b70">
-                                        <rect key="frame" x="83.5" y="132" width="92.5" height="15"/>
-                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
+                                        <rect key="frame" x="99.5" y="145.5" width="95" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CGE-pe-CfH">
-                                <rect key="frame" x="20" y="30" width="374" height="218"/>
+                                <rect key="frame" x="20" y="30" width="374" height="209.5"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -343,6 +347,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="hhlogo" width="500" height="500"/>
         <image name="unchecked" width="50" height="50"/>
     </resources>
 </document>
