@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     }
    
     func updateViews () {
-    logoImage.image = UIImage(named: "hh_logo")
+    logoImage.image = UIImage(named: "hhlogofinal.png")
     }
     
      let userController = UserController.shared
