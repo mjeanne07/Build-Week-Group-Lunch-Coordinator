@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		023D54BA23A9D1EA002FE37E /* Group Lunch Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Group Lunch Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		023D54BA23A9D1EA002FE37E /* Hungry Homies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hungry Homies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		023D54BD23A9D1EA002FE37E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023D54BF23A9D1EA002FE37E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		023D54C423A9D1EA002FE37E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		023D54BB23A9D1EA002FE37E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				023D54BA23A9D1EA002FE37E /* Group Lunch Coordinator.app */,
+				023D54BA23A9D1EA002FE37E /* Hungry Homies.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 			);
 			name = "Group Lunch Coordinator";
 			productName = "Group Lunch Coordinator";
-			productReference = 023D54BA23A9D1EA002FE37E /* Group Lunch Coordinator.app */;
+			productReference = 023D54BA23A9D1EA002FE37E /* Hungry Homies.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 023D54B523A9D1EA002FE37E /* Build configuration list for PBXProject "Group Lunch Coordinator" */;
+			buildConfigurationList = 023D54B523A9D1EA002FE37E /* Build configuration list for PBXProject "Hungry Homies" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -379,7 +379,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.morgansmith.Group-Lunch-Coordinator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hungry Homies";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.morgansmith.Group-Lunch-Coordinator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hungry Homies";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -405,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		023D54B523A9D1EA002FE37E /* Build configuration list for PBXProject "Group Lunch Coordinator" */ = {
+		023D54B523A9D1EA002FE37E /* Build configuration list for PBXProject "Hungry Homies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				023D54CC23A9D1EE002FE37E /* Debug */,
