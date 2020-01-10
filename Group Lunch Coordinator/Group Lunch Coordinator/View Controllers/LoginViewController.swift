@@ -18,10 +18,12 @@ class LoginViewController: UIViewController {
         becomeFirstResponder()
         guard let userName = userName.text, userName != "" else {return}
         userController.createUser(withUserName: userName)
+        updateViews()
     }
    
     func updateViews () {
     logoImage.image = UIImage(named: "hhlogofinal.png")
+        userName.text = ""
     }
     
      let userController = UserController.shared
