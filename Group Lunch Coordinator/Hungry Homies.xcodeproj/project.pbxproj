@@ -146,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		023D54B923A9D1EA002FE37E /* Group Lunch Coordinator */ = {
+		023D54B923A9D1EA002FE37E /* Hungry Homies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 023D54CE23A9D1EE002FE37E /* Build configuration list for PBXNativeTarget "Group Lunch Coordinator" */;
+			buildConfigurationList = 023D54CE23A9D1EE002FE37E /* Build configuration list for PBXNativeTarget "Hungry Homies" */;
 			buildPhases = (
 				023D54B623A9D1EA002FE37E /* Sources */,
 				023D54B723A9D1EA002FE37E /* Frameworks */,
@@ -158,7 +158,7 @@
 			);
 			dependencies = (
 			);
-			name = "Group Lunch Coordinator";
+			name = "Hungry Homies";
 			productName = "Group Lunch Coordinator";
 			productReference = 023D54BA23A9D1EA002FE37E /* Hungry Homies.app */;
 			productType = "com.apple.product-type.application";
@@ -191,7 +191,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				023D54B923A9D1EA002FE37E /* Group Lunch Coordinator */,
+				023D54B923A9D1EA002FE37E /* Hungry Homies */,
 			);
 		};
 /* End PBXProject section */
@@ -373,12 +373,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "Group Lunch Coordinator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.morgansmith.Group-Lunch-Coordinator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.hungryhomies;
 				PRODUCT_NAME = "Hungry Homies";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -390,12 +391,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "Group Lunch Coordinator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.morgansmith.Group-Lunch-Coordinator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.hungryhomies;
 				PRODUCT_NAME = "Hungry Homies";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		023D54CE23A9D1EE002FE37E /* Build configuration list for PBXNativeTarget "Group Lunch Coordinator" */ = {
+		023D54CE23A9D1EE002FE37E /* Build configuration list for PBXNativeTarget "Hungry Homies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				023D54CF23A9D1EE002FE37E /* Debug */,
